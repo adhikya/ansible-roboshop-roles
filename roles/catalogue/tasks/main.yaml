@@ -35,3 +35,12 @@
   include_role:
     name: common
     tasks_from: systemd.yaml
+
+
+
+- name: Deployment
+  tags: 
+  - deployment
+  import_role:
+    name: common
+    tasks_from: deployment    

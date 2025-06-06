@@ -3,21 +3,11 @@
       name: common
       tasks_from: nodejs.yaml
 
-  - name: create roboshop system user 
-    ansible.builtin.user:  
-      name: roboshop
-      system: yes
-      shell: /sbin/nologin
-      home: /app
-
   - name: app setup
     include_role:
       name: common
       tasks_from: app-setup
 
-  - name: Install dependencies
-    community.general.npm:
-      path: /app
 
   - name: systemd setup
     include_role:

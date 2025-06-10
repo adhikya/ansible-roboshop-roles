@@ -1,3 +1,5 @@
 CATALOGUE_HOST: catalogue.adhikya.site
 USER_HOST: user.adhikya.site
 CART_HOST: cart.adhikya.site
+SHIPPING_HOST: shipping.adhikya.site
+PAYMENT_HOST: payment.adhikya.site

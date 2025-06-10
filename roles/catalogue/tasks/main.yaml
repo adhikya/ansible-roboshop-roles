@@ -40,7 +40,7 @@
     name: common
     tasks_from: systemd.yaml
 
-- name: Deployment
+- name: deployment
   tags:
   - deployment
   import_role:
